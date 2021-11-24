@@ -1,0 +1,99 @@
+ext {
+    buildToolsVersion = "30.0.2"
+    minSdkVersion = 21
+    targetSdkVersion = 31
+    compileSdkVersion = 31
+    okHttpVersion = "3.9.0"
+    retrofitVersion = "2.9.0"
+    nav_version = "2.3.5"
+    junit_version = '4.12'
+    mockito_kotlin_version = '2.2.0'
+    mockito_core_version = '2.8.47'
+    mockito_inline_version = '2.8.47'
+    gson_version = "2.8.5"
+    lifecycle_version = "2.2.0"
+    coroutines_version = '1.2.1'
+    androidx_version = '1.0.1'
+    paging_version = '2.1.0'
+    fragment_version = '1.2.2'
+    core_ktx_version = "1.7.0"
+    work_version = "2.4.0"
+    coil_version = "1.0.0-rc3"
+    tooltip_version = "1.0.0"
+    dagger2_version = "2.40.0"
+
+    supportDependencies = [
+        appCompat         : 'androidx.appcompat:appcompat:1.4.0',
+        supportMulidex    : "com.android.support:multidex:1.0.3",
+        supportDesign     : 'com.google.android.material:material:1.4.0',
+        swipeRefreshLayout: 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0',
+        constraint        : 'androidx.constraintlayout:constraintlayout:2.1.2',
+        supportGrid       : 'androidx.gridlayout:gridlayout:1.0.0',
+        cardView          : 'androidx.cardview:cardview:1.0.0',
+        recyclerView      : "androidx.recyclerview:recyclerview:1.1.0",
+        prefereces        : 'androidx.preference:preference:1.0.0',
+        annotations       : 'androidx.annotation:annotation:1.0.0',
+        fragmentKtx       : "androidx.fragment:fragment-ktx:$fragment_version",
+        multidex          : "androidx.multidex:multidex:2.0.0"
+    ]
+
+    di = [
+        dagger2         : "com.google.dagger:dagger:$dagger2_version",
+        dagger2_compiler: "com.google.dagger:dagger-compiler:$dagger2_version"
+    ]
+
+    jetpack = [
+        lifecycleLiveDataKtx : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version",
+        lifecycleViewModelKtx: "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version",
+        work                 : "androidx.work:work-runtime-ktx:$work_version",
+        paging               : "androidx.paging:paging-runtime:$paging_version",
+        pagingKtx            : "androidx.paging:paging-runtime-ktx:$paging_version",
+        coreKtx              : "androidx.core:core-ktx:$core_ktx_version",
+        legacySupport        : "androidx.legacy:legacy-support-v4:1.0.0"
+    ]
+
+    libs = [
+        kotlin             : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+        okhttp             : "com.squareup.okhttp3:okhttp:$okHttpVersion",
+        okhttpLogger       : "com.squareup.okhttp3:logging-interceptor:$okHttpVersion",
+        okhttpUrlConnection: "com.squareup.okhttp3:okhttp-urlconnection:$okHttpVersion",
+        gson               : "com.google.code.gson:gson:$gson_version",
+        retrofit           : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+        retrofitGson       : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+        retrofitScalar     : "com.squareup.retrofit2:converter-scalars:$retrofitVersion",
+        retrofitRx         : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+        timber             : 'com.jakewharton.timber:timber:4.7.1',
+        stickyHeader       : "org.zakariya.stickyheaders:stickyheaders:0.7.6",
+        maskedText         : "com.redmadrobot:inputmask:4.0.0",
+        coil               : "io.coil-kt:coil:$coil_version",
+        datePicker         : "com.wdullaer:materialdatetimepicker:4.2.3",
+        tooltip            : "kz.opensource.tooltips:tooltips:$tooltip_version",
+        textdrawable       : "com.amulyakhare:com.amulyakhare.textdrawable:1.0.1",
+    ]
+
+    kotlin = [
+        kotlinX          : "androidx.core:core-ktx:$androidx_version",
+        coroutines       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version",
+        coroutinesAndroid: "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version",
+        coroutinesTest   : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version"
+    ]
+
+    navigation = [
+        fragment   : "androidx.navigation:navigation-fragment:$nav_version",
+        fragmentKtx: "androidx.navigation:navigation-fragment-ktx:$nav_version",
+        ui         : "androidx.navigation:navigation-ui:$nav_version",
+        uiKtx      : "androidx.navigation:navigation-ui-ktx:$nav_version"
+    ]
+
+    test = [
+        mockitoKotlin: "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockito_kotlin_version",
+        mockitoCore  : "org.mockito:mockito-core:$mockito_core_version",
+        mockitoInline: "org.mockito:mockito-inline:$mockito_inline_version",
+        retrofitMock : "com.squareup.retrofit2:retrofit-mock:$retrofitVersion",
+        junit        : "junit:junit:$junit_version",
+        androidX     : "androidx.arch.core:core-testing:2.0.1",
+        androidTest  : "androidx.test:runner:1.1.0",
+        espresso     : "androidx.test.espresso:espresso-core:3.1.0",
+        assertJ      : 'org.assertj:assertj-core:3.13.2'
+    ]
+}

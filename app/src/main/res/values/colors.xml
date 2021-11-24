@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    //Primary colors
+    <color name="primary">#37383d</color>
+    <color name="brand_red">#f03226</color>
+    <color name="black">#000000</color>
+    <color name="link_color">#007AFF</color>
+
+    //Secondary colors
+    <color name="white">#ffffff</color>
+    <color name="background">@color/white_grey</color>
+    <color name="nav_icon_inactive">#B6BCC3</color>
+    <color name="grey_dark">#8e8e93</color>
+    <color name="grey_medium">#bcbbc1</color>
+    <color name="grey_light">#dddde0</color>
+
+    <color name="black_12">#1e000000</color>
+    <color name="black_15_flat">#d9d9d9</color>
+    <color name="black__38">#61000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_54">#8b000000</color>
+    <color name="black_85">#de000000</color>
+    <color name="black_87">#de000000</color>
+    <color name="black_85_flat">#262626</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white_grey">#f9f9f9</color>
+    <color name="white_10">#1affffff</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="white_60">#99ffffff</color>
+    <color name="white_90">#e6ffffff</color>
+
+    //Status colors
+    <color name="ui_green">#17c37b</color>
+    <color name="error_red">#ff5c5c</color>
+    <color name="notification">#ffce00</color>
+    <color name="custom_red_error">#FF6347</color>
+
+    <color name="account_skeleton_color">#2B3A4A</color>
+    <color name="statement_skeleton_color">#F3F4F5</color>
+    <color name="divider_color">#e8e9ea</color>
+    <color name="stroke_color">#d8dcde</color>
+
+    //brand new colors
+    <color name="ui_primary">#222932</color>
+    <color name="text_value_positive_sum">#5fae50</color>
+    <color name="text_value_positive_fraction">#9fce96</color>
+    <color name="ui_white">#ffffff</color>
+    <color name="ui_red_error">#ff5c5c</color>
+    <color name="red_brand">#f03226</color>
+    <color name="red_brand_90_flat">#f1463b</color>
+    <color name="red_dark">#bd291e</color>
+    <color name="red_brand_default">#f35b51</color>
+    <color name="blur_overlay">#8F212A33</color>
+    <color name="text_paragraph">#546271</color>
+    <color name="text_primary">#172a3f</color>
+    <color name="text_secondary">#6d7986</color>
+    <color name="ui_green_success">#0dba26</color>
+    <color name="ui_card">#2b3a4a</color>
+    <color name="ui_gray">#b5bbc2</color>
+    <color name="ui_secondary">#858f9a</color>
+    <color name="ui_red">#f0453a</color>
+    <color name="ui_background">#f3f4f5</color>
+    <color name="ui_icon_background">#0b1f35</color>
+    <color name="ui_tooltip_background">#383E46</color>
+    <color name="divider_color_dark">#373f47</color>
+    <color name="fraction_color_light">#a5a8ac</color>
+
+    <color name="silver_2">#dddde0</color>
+    <color name="silver_3">#d5d5d6</color>
+
+    <color name="dark_indigo">#0a1e32</color>
+    <color name="dark_indigo_10">#1a0b1f35</color>
+    <color name="dark_indigo_25">#400b1f35</color>
+    <color name="dark_indigo_30">#4d0b1f35</color>
+    <color name="dark_indigo_60_flat">#6d7986</color>
+    <color name="dark_indigo_95_flat">#172a3f</color>
+
+    <color name="abm_divider">@color/dark_indigo_10</color>
+    <color name="abm_divider_new">#e8e9ea</color>
+    <color name="abm_secondary_text">@color/dark_indigo_60_flat</color>
+    <color name="abm_primary">@color/black_85_flat</color>
+    <color name="abm_primary_dark">@color/black_85_flat</color>
+    <color name="abm_control_normal">@color/dark_indigo_25</color>
+    <color name="abm_control_highlight">@color/dark_indigo_10</color>
+    <color name="abm_primary_text">@color/dark_indigo_95_flat</color>
+    <color name="ic_launcher_background">#222932</color>
+
+    <!-- use on dark background -->
+    <color name="abm_primary_text_inverse">@color/white</color>
+    <color name="abm_secondary_text_inverse">@color/white_60</color>
+    <color name="abm_control_normal_inverse">@color/white</color>
+    <color name="abm_control_highlight_inverse">@color/white_10</color>
+
+    <color name="grey_1">#8e8e93</color>
+    <color name="grey_2">#bcbbc1</color>
+    <color name="grey_3">#dddde0</color>
+    <color name="grey_50">#80bfbfbf</color>
+    <color name="pale_grey">#f3f4f5</color>
+    <color name="charcoal_grey">#37383d</color>
+    <color name="charcoal_grey_two">#37383d</color>
+    <color name="charcoal_grey_60">#9937383d</color>
+    <color name="charcoal_grey_60_opaque">#37383d</color>
+    <color name="cool_grey">#bcbbc1</color>
+    <color name="steel">@color/grey_1</color>
+    <color name="gunmetal">#525760</color>
+
+    <!-- Common button backgrounds-->
+    <color name="bg_btn_secondary_normal">#ECEDEF</color>
+    <color name="bg_btn_secondary_pressed">#E9E9E9</color>
+    <color name="bg_btn_secondary_inactive">#F3F4F5</color>
+
+    <color name="bg_btn_primary_normal">@color/red_brand_90_flat</color>
+    <color name="bg_btn_primary_pressed">@color/red_brand</color>
+    <color name="bg_btn_primary_inactive">#FBCCC9</color>
+
+    <!--Info block-->
+    <color name="info_block_container_bg_error">#FFF7F7</color>
+    <color name="info_block_container_bg_normal">@color/ui_background</color>
+    <color name="info_block_container_outline_error">#FFE3E3</color>
+    <color name="info_block_container_outline_normal">@color/divider_color</color>
+    <color name="info_block_progress_error">@color/ui_red_error</color>
+    <color name="info_block_progress_normal">@color/ui_card</color>
+</resources>

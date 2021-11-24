@@ -1,0 +1,122 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-kapt'
+    id "scabbard.gradle" version "0.5.0"
+}
+
+android {
+    compileSdk compileSdkVersion
+    buildToolsVersion buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.example.newsapp"
+        minSdk minSdkVersion
+        targetSdk targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    scabbard {
+        enabled true
+        failOnError true
+        fullBindingGraphValidation true
+        qualifiedNames true
+        outputFormat "svg"
+    }
+}
+
+apply {
+    from "$project.rootDir/dependencies.gradle"
+}
+
+dependencies {
+    //support
+    implementation supportDependencies.appCompat
+    implementation supportDependencies.supportMulidex
+    implementation supportDependencies.supportDesign
+    implementation supportDependencies.swipeRefreshLayout
+    implementation supportDependencies.constraint
+    implementation supportDependencies.supportGrid
+    implementation supportDependencies.cardView
+    implementation supportDependencies.recyclerView
+    implementation supportDependencies.prefereces
+    implementation supportDependencies.annotations
+    implementation supportDependencies.fragmentKtx
+    implementation supportDependencies.multidex
+
+    //di
+    implementation di.dagger2
+    kapt di.dagger2_compiler
+
+    //jetpack
+    implementation jetpack.lifecycleLiveDataKtx
+    implementation jetpack.lifecycleViewModelKtx
+    implementation jetpack.work
+    implementation jetpack.paging
+    implementation jetpack.pagingKtx
+    implementation jetpack.coreKtx
+    implementation jetpack.legacySupport
+
+    //libs
+    implementation libs. kotlin
+    implementation libs. okhttp
+    implementation libs. okhttpLogger
+    implementation libs. okhttpUrlConnection
+    implementation libs. gson
+    implementation libs. retrofit
+    implementation libs. retrofitGson
+    implementation libs. retrofitScalar
+    implementation libs. retrofitRx
+    implementation libs. timber
+    implementation libs. stickyHeader
+    implementation libs. maskedText
+    implementation libs. coil
+    implementation libs. datePicker
+    implementation libs. tooltip
+    implementation libs. textdrawable
+
+    //kotlin
+    implementation kotlin.kotlinX
+    implementation kotlin.coroutines
+    implementation kotlin.coroutinesAndroid
+    implementation kotlin.coroutinesTest
+
+    //navigation
+    implementation navigation.fragment
+    implementation navigation.fragmentKtx
+    implementation navigation.ui
+    implementation navigation.uiKtx
+
+    //test
+    implementation test.mockitoKotlin
+    implementation test.mockitoCore
+    implementation test.mockitoInline
+    implementation test.retrofitMock 
+    implementation test.junit
+    implementation test.androidX
+    implementation test.androidTest
+    implementation test.espresso
+    implementation test.assertJ
+
+}
